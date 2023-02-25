@@ -27,14 +27,15 @@
     }
 </style>
 <body>
+    <div class="root"></div>
     <header class="header">
         <div class="header__slogan">
             <a href="#">Gourmet au Catering</a>
         </div>
         <div class="header__direction">
-            <a href="#">About</a>
-            <a href="#">Menu</a>
-            <a href="#">Contact</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
         </div>
     </header>
     <div class="container">
@@ -42,7 +43,7 @@
             <img src="https://www.w3schools.com/w3images/hamburger.jpg" alt="">
             <h1 class="main-image__name">Le Catering</h1>
         </div>
-        <div class="main-about">
+        <div id="about" class="main-about">
             <div class="about-image">
                 <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" alt="">
             </div>
@@ -57,19 +58,78 @@
                 </div>
             </div>
         </div>
-        <div class="main-menu">
+        <div id="menu" class="main-menu">
+            <div class="menu-image">
+                <img src="https://www.w3schools.com/w3images/tablesetting.jpg" alt="">
+            </div>
             <div class="menu-content">
                 <h2 class="menu-title">Our Menu</h2>
-                <br>
                 <div class="menu-desc">
                     <p class="menu-mdesc">Bread Basket</p>
                     <p class="menu-sdesc">Assortment of fresh baked fruit breads and muffins 5.50</p>
                 </div>
-            </div>
-            <div class="menu-image">
-                <img src="https://www.w3schools.com/w3images/tablesetting.jpg" alt="">
+                <div class="menu-desc">
+                    <p class="menu-mdesc">Honey Almond Granola with Fruits</p>
+                    <p class="menu-sdesc">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                </div>
+
+                <div class="menu-desc">
+                    <p class="menu-mdesc">Belgian Waffle</p>
+                    <p class="menu-sdesc">Vanilla flavored batter with malted flour 7.50</p>
+                </div>
+
+                <div class="menu-desc">
+                    <p class="menu-mdesc">Scrambled eggs</p>
+                    <p class="menu-sdesc">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50
+                    </p>
+                </div>
+
+                <div class="menu-desc">
+                    <p class="menu-mdesc">Blueberry Pancakes</p>
+                    <p class="menu-sdesc">With syrup, butter and lots of berries 8.50</p>
+                </div>
             </div>
         </div>
+        <div id="contact" class="main-contact">
+            <h2 class="contact-title">Contact</h2>
+            <p class="contact-desc">We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+            <p class="contact-desc">Do not hesitate to contact us.</p>
+            <p class="contact-address">Catering Service, 42nd Living St, 43043 New York, NY</p>
+            <p class="contact-address-more">You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+            <form action="" class="contact-form">
+                <div class="form-input">
+                    <input type="text" placeholder=" ">
+                    <label for="">Name</label>
+                </div>
+                <div class="form-input">
+                    <input type="text" placeholder=" ">
+                    <label for="">How many people</label>
+                </div>
+                <div class="form-input">
+                    <input type="text" placeholder=" ">
+                    <label for="">11/06/2020 08:00 PM</label>
+                </div>
+                <div class="form-input">
+                    <input type="text" placeholder=" ">
+                    <label for="">Message \ Special requirements</label>
+                </div>
+              
+
+            </form>
+            <div class="contact-btn"><button >SEND MESSAGE</button></div>
+        </div>
     </div>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <span>Powered by <a href="#">w3.css</a></span>
+        </div>
+    </footer>
+
+    <script>
+        const root = document.querySelector('.root')
+
+        console.log(root)
+    </script>
 </body>
 </html>
